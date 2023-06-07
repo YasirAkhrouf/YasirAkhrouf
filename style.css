@@ -1,0 +1,127 @@
+/* Stylisation du header */
+.header {
+    overflow: hidden;
+    background-color: black;
+    padding: 20px 10px;
+    margin: 0;
+  }
+  
+  /* Stylisation des liens du header */
+  .header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  /* stylisation du logo/titre GY-GOAL */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  /* Changement de couleur au passage de la souris */
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Stylisation du liens active*/
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+
+  /* Stylisation du body */
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+
+/*Stylisation du footer*/
+ul {
+    display: inline-grid    ;
+    grid-auto-flow: row;
+    grid-gap: 24px;
+    justify-items: center;
+    margin: auto;
+    text-align: center;
+  }
+
+  @media (min-width: 500px) {
+    ul {
+      grid-auto-flow: column;
+    }
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+  }
+  
+  a:hover {
+    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+  }
+  
+  li:last-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  li:hover ~ li p {
+    animation: wave-animation 0.3s infinite;
+  }
+  
+  footer {
+    display: flex;
+    background-color: black;
+    line-height: 1.3;
+    font-family: Menlo, monospace;
+    text-align: center;
+  }
+  
+  @keyframes wave-animation {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(20deg);
+    }
+    75% {
+      transform: rotate(-15deg);
+    }
+  }
+
+  /*Suppressions des couleurs d'un liens déjà cliquer*/
+  .no-link-color{
+    color: white;
+    text-decoration: none;
+  }
+    
+  /* Image d'arrière-plan statique */
+  .background{
+    background-image: url('images/Stade.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  } 
+
+  .alignement {
+    text-align: center;     
+    display:;
+
+  }
+  
